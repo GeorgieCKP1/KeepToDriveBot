@@ -6,7 +6,7 @@ app.use(express.json());
 
 app.post('/api/line/callback', (req, res) => {
   console.log(req.body);
-  res.status(200).send('OK');
+  res.status(200).send('OK'); // ต้องตอบกลับด้วยสถานะ 200
 });
 
 app.listen(port, () => {
